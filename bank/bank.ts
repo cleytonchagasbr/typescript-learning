@@ -7,7 +7,7 @@ type Correntista = {
 
 type ContaBancaria = {
     numero: number,
-    depositar: (valor: number) => number
+    depositar: (valor: number) => void
 }
 
 type Transacao = {
@@ -15,8 +15,7 @@ type Transacao = {
     recebedor: Correntista,
     dados: ContaBancaria 
 }
-
-
+            
 // -------------------------------------
 
 let contaCorrente: ContaBancaria = {
@@ -41,7 +40,7 @@ let transacao: Transacao = {
 
 
 console.log(transacao.dados.depositar(400))
-console.log(transacao.pagador)
+console.log(typeof transacao.pagador)
 
 
 
