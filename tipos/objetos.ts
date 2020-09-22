@@ -12,10 +12,12 @@ let cidade: {latitude: number, longitude: number, nome: string} = {
 
 //---------------------
 
-let funcionario:  {
+type Funcionario =  {
     supervisores: string [],
     ponto: (horas: number) => string
-} = {
+} 
+
+let createFuncionario: Funcionario = {
     supervisores: ['Ana', 'Luiz'],
     ponto(horario: number): string {
         if(horario <= 8) {
@@ -26,5 +28,5 @@ let funcionario:  {
     }   
 }
 
-console.log(funcionario.supervisores)
-console.log(funcionario.ponto(5))
+console.log(createFuncionario.supervisores)
+console.log(createFuncionario.ponto(5))

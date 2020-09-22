@@ -1,4 +1,4 @@
-let nome: string = 'cleyton'
+let nome2: string = 'cleyton'
 
 let idade: number = 21;
 
